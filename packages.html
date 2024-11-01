@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages</title>
+    <link rel="stylesheet" href="packages.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Exclusive Travel Packages</h1>
+            <p>Explore our exciting travel packages tailored just for you!</p>
+        </header>
+        <div class="packages">
+            <div class="package">
+                <img src="https://www.sandals.com/blog/content/images/2022/03/Sandals-Grande-Antigua-Long-Beach-Overview.jpg" alt="Beach Package">
+                <h2>Beach Getaway</h2>
+                <p>Enjoy a relaxing beach vacation with stunning views and activities.</p>
+                <p><strong>Duration:</strong> 5 Days, 4 Nights</p>
+                <p><strong>Includes:</strong> Accommodation, Breakfast, Beach Activities</p>
+                <span class="price">25000 Rs</span>
+                <button class="inquire-btn" data-package="Beach Getaway">Inquire Now</button>
+            </div>
+            <div class="package">
+                <img src="https://www.serenemountainescapes.com/wp-content/uploads/2018/09/66A23377-80E8-4C7B-9ED3-0525102AD6B7-1500x1125.jpeg" alt="Mountain Package">
+                <h2>Mountain Escape</h2>
+                <p>Experience adventure in the mountains with hiking, camping, and more.</p>
+                <p><strong>Duration:</strong> 7 Days, 6 Nights</p>
+                <p><strong>Includes:</strong> Guided Hiking, Camping Gear, Meals</p>
+                <span class="price">30000 Rs</span>
+                <button class="inquire-btn" data-package="Mountain Escape">Inquire Now</button>
+            </div>
+            <div class="package">
+                <img src="https://www.tripsavvy.com/thmb/LyuLJYGkKQAJRj7yG1UWU-yAgjY=/2121x1414/filters:fill(auto,1)/boat-tour-chicago-architecture-5c30d99e46e0fb000111bb69.jpg" alt="City Tour">
+                <h2>City Tour</h2>
+                <p>Discover vibrant city life, shopping, sightseeing, and cultural events.</p>
+                <p><strong>Duration:</strong> 3 Days, 2 Nights</p>
+                <p><strong>Includes:</strong> Hotel Stay, City Guide, Entry Fees</p>
+                <span class="price">15500 Rs</span>
+                <button class="inquire-btn" data-package="City Tour">Inquire Now</button>
+            </div>
+            <div class="package">
+                <img src="https://cdn-images.go2africa.com/wp-content/uploads/2018/06/19102645/Authentic-safari-camping-in-Amboseli-and-the-Masai-Mara.jpg" alt="Safari Adventure">
+                <h2>Safari Adventure</h2>
+                <p>Join a thrilling safari and see wildlife up close in their natural habitat.</p>
+                <p><strong>Duration:</strong> 5 Days, 4 Nights</p>
+                <p><strong>Includes:</strong> Safari Guide, Accommodation, Meals</p>
+                <span class="price">29999 Rs</span>
+                <button class="inquire-btn" data-package="Safari Adventure">Inquire Now</button>
+            </div>
+            <div class="package">
+                <img src="https://www.egypttoursportal.com/images/2020/12/Egypt-Desert-Deserve-To-Discover-For-Adventure-Travelers-Egypt-Tours-Portal.jpg" alt="Desert Exploration">
+                <h2>Desert Exploration</h2>
+                <p>Explore the mystique of the desert with guided tours and camping.</p>
+                <p><strong>Duration:</strong> 4 Days, 3 Nights</p>
+                <p><strong>Includes:</strong> Desert Camping, Meals, Guided Tour</p>
+                <span class="price">25000 Rs</span>
+                <button class="inquire-btn" data-package="Desert Exploration">Inquire Now</button>
+            </div>
+            <div class="package">
+                <img src="https://cdn.images.express.co.uk/img/dynamic/135/750x445/1229384.jpg" alt="Cruise Package">
+                <h2>Cruise Journey</h2>
+                <p>Enjoy a luxurious cruise with stunning ocean views and world-class amenities.</p>
+                <p><strong>Duration:</strong> 10 Days, 9 Nights</p>
+                <p><strong>Includes:</strong> All Meals, Entertainment, Private Cabins</p>
+                <span class="price">56999 Rs</span>
+                <button class="inquire-btn" data-package="Cruise Journey">Inquire Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="inquiryModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Inquire about <span id="packageName"></span></h2>
+            <form id="inquiryForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="packages.js"></script>
+</body>
+</html>

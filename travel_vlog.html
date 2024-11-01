@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Vlog</title>
+    <link rel="stylesheet" href="travel_vlog.css">
+</head>
+<body>
+    <header>
+        <h1>Adventures with Us!</h1>
+        <p>Welcome to our travel vlog! Discover breathtaking destinations and unforgettable experiences.</p>
+        <img src="https://example.com/vlog-banner.jpg" alt="Travel Vlog Banner" class="banner">
+    </header>
+
+    <section class="about">
+        <h2>About Our Vlog</h2>
+        <p>Our vlog captures the best travel experiences, from serene beaches to majestic mountains, vibrant cityscapes to rustic villages. Join us as we explore the world and bring you tips, hidden gems, and incredible travel stories!</p>
+    </section>
+
+    <section class="reviews">
+        <h2>What People Are Saying</h2>
+        
+        <div class="review">
+            <img src="https://example.com/user1.jpg" alt="User 1 Photo" class="user-photo">
+            <h3>Emily R.</h3>
+            <p>"Absolutely love this vlog! The content is inspiring and the tips are incredibly useful. Can’t wait to see more of your adventures!"</p>
+            <span class="rating">⭐⭐⭐⭐⭐</span>
+        </div>
+
+        <div class="review">
+            <img src="https://example.com/user2.jpg" alt="User 2 Photo" class="user-photo">
+            <h3>Daniel S.</h3>
+            <p>"Amazing destinations and beautiful cinematography. I felt like I was right there with you. Keep up the great work!"</p>
+            <span class="rating">⭐⭐⭐⭐⭐</span>
+        </div>
+
+        <div class="review">
+            <img src="https://example.com/user3.jpg" alt="User 3 Photo" class="user-photo">
+            <h3>Priya K.</h3>
+            <p>"Thanks to this vlog, I planned my entire trip to Thailand and it was unforgettable! Great insights and honest reviews. A must-watch for travel enthusiasts!"</p>
+            <span class="rating">⭐⭐⭐⭐⭐</span>
+        </div>
+        
+        <div class="review">
+            <img src="https://example.com/user4.jpg" alt="User 4 Photo" class="user-photo">
+            <h3>John M.</h3>
+            <p>"Every episode makes me want to pack my bags and go! I appreciate the genuine vibe and authenticity. Highly recommended."</p>
+            <span class="rating">⭐⭐⭐⭐</span>
+        </div>
+    </section>
+
+    <section class="submit-review">
+        <h2>Share Your Thoughts</h2>
+        <form id="reviewForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="1">⭐</option>
+            </select>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+
+    <script src="travel_vlog.js"></script>
+</body>
+</html>

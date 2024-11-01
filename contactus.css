@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Noto+Sans|Open+Sans:400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  background: url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  background: white;
+  padding: 60px 40px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.input-field {
+  margin: 15px 0;
+  position: relative;
+  width: 100%;
+}
+
+.input-field input, .input-field textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid silver;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.input-field textarea {
+  height: 80px;
+  padding-top: 12px;
+}
+
+.input-field input:focus, .input-field textarea:focus {
+  border-color: #1DA1F2;
+}
+
+.input-field label {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  color: grey;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.input-field input:focus ~ label,
+.input-field input:valid ~ label,
+.input-field textarea:focus ~ label,
+.input-field textarea:valid ~ label {
+  top: -18px;
+  font-size: 14px;
+  color: #1DA1F2;
+}
+
+/* Updated Button Design */
+.button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.button button {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: linear-gradient(to right, #00dbde, #fc00ff);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.button button:hover {
+  background: linear-gradient(to right, #fc00ff, #00dbde);
+}
+
+.auth {
+  margin: 25px 0 15px;
+  font-size: 18px;
+  color: grey;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+}
+
+.facebook, .google {
+  height: 40px;
+  width: 100%;
+  border: 1px solid silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.facebook:hover {
+  border-color: #4267B2;
+}
+
+.google:hover {
+  border-color: #dd4b39;
+}
+
+.facebook i, .facebook span {
+  color: #4267B2;
+}
+
+.google i, .google span {
+  color: #dd4b39;
+}
+
+.links i {
+  font-size: 20px;
+}
+
+.links span {
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}

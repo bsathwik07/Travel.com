@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>Booking Form</header>
+        <form id="bookingForm">
+            <div class="input-field">
+                <label for="bookingType">Select Booking Type</label>
+                <select id="bookingType" required>
+                    <option value="" disabled selected></option>
+                    <option value="train">Train</option>
+                    <option value="bus">Bus</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="flight">Flight</option>
+                    <option value="car_rental">Car Rental</option>
+                </select>
+            </div>
+
+            <div id="detailsContainer" style="display: none;">
+                <div class="input-field">
+                    <input type="text" id="name" required>
+                    <label for="name">Full Name</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" id="phone" required>
+                    <label for="phone">Phone Number</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="date" id="date" required>
+                    <label for="date">Booking Date</label>
+                </div>
+
+                <div class="input-field" id="specificDetailsContainer">
+                    <input type="text" id="specificDetails" required>
+                    <label for="specificDetails">Booking Details</label>
+                </div>
+            </div>
+
+            <div class="button">
+                <button type="submit" id="submitButton" disabled>Book Now</button>
+            </div>
+        </form>
+        <div id="message" class="message"></div>
+    </div>
+    <script src="booking.js"></script>
+</body>
+</html>
